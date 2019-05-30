@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<audio id="winning">
+    <source src="Assets\winning.mp3" type="audio/mp3">
+</audio>
+
+<audio id="losing">
+    <source src="Assets\losing.mp3" type="audio/mp3">
+</audio>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Hero-Man</h1>
+            <p class="lead">Guess a Hero to win the game</p>
+        </div>
+    </div>
+    <div class='col-xs-14 col-md 10 text-center left'>
+        <h2 id="letsPlay"></h2>
+        <h3>Current Word</h3>
+        <div id='currentWord'>_ _ _ _ _ _ _ _ _ _</div>
+        <br><br>
+        <div class="row">
+            <div class="col-xs-10 col-md-4">
+                <h3>Letters Guessed:</h3>
+                <div id="lettersGuessed">--</div>
+            </div>
+            <br><br>
+            <div class="col-xs-12 col-md-6">
+                <h3>Guesses Left:</h3>
+                <div id="guessesLeft">--</div>
+            </div>
+            <br><br>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <h3>Number of Wins:</h3>
+                <div id="wins">0</div>
+            </div>
+            <br><br>
+            <div class="col-xs-12 col-md-6">
+                <h3>Number of Losses:</h3>
+                <div id="losses">0</div>
+            </div>
+        </div>
+    </div>
+    <img src=Assets\marvellogo.png width="200" height="200" class="center">
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
